@@ -568,10 +568,10 @@ section#semi-metallic-products .animate{
     transition: 1s;
 }
 section#actual-products .animate{
-    transform: translateX(-100%);
+    transform: translateY(100%);
 }
 section#actual-products.show-animate .animate{
-    transform: translateX(0);
+    transform: translateY(0);
 } 
 section#actual-products.show-animate .animate{
     transition: 1s;
@@ -597,10 +597,10 @@ section#RTJ-types .animate{
 }
 
 section#actual-products .animate{
-    transform: translateX(100%);
+    transform: translateY(100%);
 }
 section#actual-products.show-animate .animate{
-    transform: translateX(0);
+    transform: translateY(0);
 }
 section#actual-products .animate{
     transition: 1s;
