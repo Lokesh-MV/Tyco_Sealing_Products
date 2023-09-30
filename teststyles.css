@@ -265,14 +265,14 @@ p#categories-head{
 }
 #qt-home, #whh{
     padding: 2% 4% 4%;
-    height: 680px;
+    height: 730px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 #qt-home-right, #whh-right{
-    width: 370px;
+    width: 430px;
     background-color: #DCEEF1;
     padding: 3%;
     align-self: flex-end;
@@ -280,9 +280,12 @@ p#categories-head{
     z-index: 1;
     margin-left: -3%;
 }
+#whh-right{
+    width: 480px;
+}
 #whh-left{
-    width: 320px;
-    height: 320px;
+    width: 380px;
+    height: 400px;
     align-self: flex-start;
     border-radius: 12px;
     background: url(CAssets/quality.png);
@@ -292,8 +295,8 @@ p#categories-head{
     z-index: -1;
 }
 #qt-home-left{
-    width: 320px;
-    height: 320px;
+    width: 380px;
+    height: 400px;
     align-self: flex-start;
     border-radius: 12px;
     background: url(CAssets/quality.png);
@@ -306,6 +309,9 @@ p#categories-head{
     font-size: 22px;
     color: #000;
     font-weight: 600;
+}
+#qt-text{
+    font-size: 18px;
 }
 #qt-home button, #whh button{
     background-color: #D62828;
@@ -495,10 +501,10 @@ section#products-home .animate{
 }
 
 section#qt-home .animate{
-    transform: translateX(100%);
+    transform: translateY(100%);
 }
 section#qt-home.show-animate .animate{
-    transform: translateX(0);
+    transform: translateY(0);
 }
 section#qt-home .animate{
     transition: 1s;
