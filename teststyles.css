@@ -461,18 +461,18 @@ section#products-categories .animate{
     transition: 2s;
 }
 
-
 section#abt-home .animate{
-    transform: translateX(100%);
+    transform: translateY(100%);
 }
 section#abt-home.show-animate .animate{
-    transform: translateX(0);
+    transform: translateY(0);
 }
 section#abt-home .animate{
     transition: 1s;
 }
 section{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 section#whh .animate{
     transform: translateX(-100%);
@@ -481,14 +481,14 @@ section#whh.show-animate .animate{
     transform: translateX(0);
 }
 section#whh .animate{
-    transition: 2s;
+    transition: 1s;
 } 
 
 section#products-home .animate{
-    transform: translateX(-100%);
+    transform: translateY(100%);
 }
 section#products-home.show-animate .animate{
-    transform: translateX(0);
+    transform: translateY(0);
 } 
 section#products-home .animate{
     transition: 1s;
