@@ -492,7 +492,15 @@ section#whh.show-animate .animate{
 section#whh .animate{
     transition: 1s;
 } 
-
+section#footer .animate{
+    transform: translateY(100%);
+}
+section#footer.show-animate .animate{
+    transform: translateY(0);
+}
+section#footer .animate{
+    transition: 1s;
+}
 section#products-home .animate{
     transform: translateY(100%);
 }
@@ -566,7 +574,7 @@ section#actual-products.show-animate .animate{
     transform: translateX(0);
 } 
 section#actual-products.show-animate .animate{
-    transition: 2s;
+    transition: 1s;
 }
 section#semi-metallic-hero .animate{
     transform: translateX(100%);
@@ -575,7 +583,7 @@ section#semi-metallic-hero.show-animate .animate{
     transform: translateX(0);
 }
 section#semi-metallic-hero .animate{
-    transition: 2s;
+    transition: 1s;
 }
 
 section#RTJ-types .animate{
@@ -585,7 +593,7 @@ section#RTJ-types.show-animate .animate{
     transform: translateX(0);
 }
 section#RTJ-types .animate{
-    transition: 2s;
+    transition: 1s;
 }
 
 section#actual-products .animate{
@@ -595,7 +603,7 @@ section#actual-products.show-animate .animate{
     transform: translateX(0);
 }
 section#actual-products .animate{
-    transition: 2s;
+    transition: 1s;
 }
 
 
