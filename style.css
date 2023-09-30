@@ -912,12 +912,32 @@ section#about-text{
     background-size: cover;
     position: relative;
 }
+#landing-products-individual{
+    height: 60vh;
+    width: 100%;
+    background-image: url(CAssets/products-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 #products-section-head{
     font-size: 56px;
     color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
     position: absolute;
     top: 40%;
+    /* bottom: 0; */
+    left: 13%;
+    font-weight: 900;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+#products-section-head-individual{
+    font-size: 56px;
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 32%;
     /* bottom: 0; */
     left: 13%;
     font-weight: 900;
@@ -934,6 +954,18 @@ section#about-text{
     /* margin: auto; */
     position: absolute;
     top: 50%;
+    left: 13%;
+    color: #f0f0f0;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+#products-text-individual{
+    font-size: 24px;
+    color: #6c757d;
+    /* width: 30%; */
+    text-align: center;
+    /* margin: auto; */
+    position: absolute;
+    top: 48%;
     left: 13%;
     color: #f0f0f0;
     font-family: 'Darker Grotesque', sans-serif;
@@ -974,10 +1006,10 @@ section#about-text{
     }
 } */
 @media only screen and (max-width : 700px){
-    #products-text{
+    #products-text, #products-text-individual{
         font-size: 20px;
     }
-    #products-section-head{
+    #products-section-head, #products-section-head-individual{
         font-size: 40px;
     }
 }
@@ -988,7 +1020,12 @@ section#about-text{
         top: 48%;
         left:0;
     }
-    #products-section-head{
+    #products-text-individual{
+        font-size: 18px;
+        left: 8%;
+        top: 46%;
+    }
+    #products-section-head, #products-section-head-individual{
         font-size: 32px;
         left: 8%;
     }

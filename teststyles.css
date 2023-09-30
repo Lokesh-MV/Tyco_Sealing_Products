@@ -614,7 +614,15 @@ section#strengths.show-animate .animate{
 section#strengths .animate{
     transition: 1s;
 }
-
+section#semi-metallic-products .animate{
+    transform: translateX(-200%);
+}
+section#semi-metallic-products.show-animate .animate{
+    transform: translateX(0);
+}
+section#semi-metallic-products .animate{
+    transition: 1s;
+}
 #contact-image-section{
     height: 70vh;
     width: 100%;

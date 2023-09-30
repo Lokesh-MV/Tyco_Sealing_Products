@@ -20,42 +20,41 @@
   </head>
   <body>
     <!-- Individual products landing section -->
-    <section id="individual-products-section">
-      <!-- Navbar section -->
-      <!-- Large Devices nav bar -->
+    <section id="landing-products-individual">
+      <!-- navbar section -->
       <nav id="test-nav" class="menu-bar">
         <div class="navbar-brand-logo">
             <a href="index.html">
-                <img src="CAssets/tycoLogoWhite.png" loading="lazy" id="nav-logo">
+                <img src="CAssets/tycoLogoWhite.png" id="nav-logo">
             </a>
         </div>
         <ul>
-          <li onclick="location.href='index.html'">
+          <li>
             <a href="index.html" class="main-menu-element" >Home</a>
             <div class="sub-menu-1">
                 <ul>
-                    <li onclick="location.href='test.html#products-categories'">
-                        <a href="#products-categories">Our Categories</a>
+                    <li onclick="location.href='index.html#products-categories'">
+                        <a href="test.html#products-categories">Our Categories</a>
                     </li>
-                    <li onclick="location.href='test.html#abt-home'">
-                        <a href="#abt-home">
+                    <li onclick="location.href='index.html#abt-home'">
+                        <a href="test.html#abt-home">
                             About Us
                         </a>
                     </li>
-                    <li onclick="location.href='test.html#products-home'">
-                        <a href="#products-home">
+                    <li onclick="location.href='index.html#products-home'">
+                        <a href="test.html#products-home">
                             Our Products
                         </a>
                     </li>
-                    <li onclick="location.href='test.html#qt-home'">
-                        <a href="#qt-home">
+                    <li onclick="location.href='index.html#qt-home'">
+                        <a href="test.html#qt-home">
                             Quality Policy
                         </a>
                     </li>
                 </ul>
             </div>
           </li>
-          <li onclick="location.href='products.html'">
+          <li>
             <a href="products.html" class="main-menu-element">Products</a>
             <div class="sub-menu-1">
                 <div class="menu-1">
@@ -92,7 +91,7 @@
                 </div>
             </div>
           </li>
-          <li onclick="location.href='about.html'">
+          <li>
             <a href="about.html" class="main-menu-element">About</a>
             <div class="sub-menu-1">
                 <ul>
@@ -119,62 +118,63 @@
                 </ul>
             </div>
           </li>
-          <li onclick="location.href='contact.html'">
-            <a href="contact.html" class="">Contact</a>
+          <li>
+            <a href="contact.html" class="main-menu-element">Contact</a>
           </li>
         </ul>
         </a>
       </nav>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">
-          <img src="CAssets/tycoLogoWhite.png" id="nav-logo" style="width: 30%;" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-small-devices"
-        >
-          <ion-icon name="menu-outline" id="menu"></ion-icon>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-small-devices">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item m-3">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown m-3">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Products
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="metallic.html">RTJ Gaskets</a></li>
-                <li><a class="dropdown-item" href="vxAx.html">VX-AX Gaskets</a></li>
-                <li><a class="dropdown-item" href="ixgaskets.html">IX Gaskets</a></li>
-                <li><a class="dropdown-item" href="spiralWound.html">Spiral Wound Gaskest</a></li>
-                <li><a class="dropdown-item" href="kammprofile.html">Kammprofile Gaskets</a></li>
-                <li><a class="dropdown-item" href="MetalJacketed.html">Metal-Jacketed Gaskets</a></li>
-                <li><a class="dropdown-item" href="nonMetallicGaskets.html">Non-Metallic Gaskets</a></li>
-                <li><a class="dropdown-item" href="highTensile.html">High-Tensile Fasteners</a></li>
-              </ul>
-            </li>
-            <li class="nav-item m-3">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li
-              class="nav-item m-3 contact-button-navbar"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <a href="contact.html" class="nav-link contact-button-navbar"
-                >Contact</a
-              >
-            </li>
-          </ul>
+
+      <!-- Medium Devices Nav bar -->
+      <nav class="navbar navbar-expand-lg bg-white" id="med-navBar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="test.html">
+            <img src="CAssets/tyco logo blue.png" id="med-nav-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="test.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="metallic.html">RTJ Gaskets</a></li>
+                  <li><a class="dropdown-item" href="vxAx.html">VX-AX Gaskets</a></li>
+                  <li><a class="dropdown-item" href="ixgaskets.html">IX Gaskets</a></li>
+                  <li><a class="dropdown-item" href="spiralWound.html">Spiral Wound Gaskest</a></li>
+                  <li><a class="dropdown-item" href="kammprofile.html">Kammprofile Gaskets</a></li>
+                  <li><a class="dropdown-item" href="MetalJacketed.html">Metal-Jacketed Gaskets</a></li>
+                  <li><a class="dropdown-item" href="nonMetallicGaskets.html">Non-Metallic Gaskets</a></li>
+                  <li><a class="dropdown-item" href="highTensile.html">High-Tensile Fasteners</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" aria-disabled="true">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <p id="products-section-head-individual">Our Products</p>
+      <p id="products-text-individual">
+        Explore our comprehensive selection of top-tier industrial gaskets
+      </p>
+      <div id="whats-app-div" onclick="location.href='https://api.whatsapp.com/send?phone=7799411997'">
+        <img src="CAssets/whatsapp.png" id="whats-app-icon">
+        <span>Tyco Industries</span>
+      </div>
+    </section>
       <!-- Inner section of the individual product -->
       <section id="ind-product-inner">
         <img src="CAssets/VX-AX.jpg" />

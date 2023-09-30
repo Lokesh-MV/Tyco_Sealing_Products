@@ -19,14 +19,13 @@
     <link rel="stylesheet" href="teststyles.css" />
   </head>
   <body>
-    <!-- Individual products landing section -->
-    <section id="individual-products-section">
-      <!-- Navbar section -->
-      <!-- Large Devices nav bar -->
+     <!-- Individual products landing section -->
+     <section id="landing-products-individual">
+      <!-- navbar section -->
       <nav id="test-nav" class="menu-bar">
         <div class="navbar-brand-logo">
             <a href="index.html">
-                <img src="CAssets/tycoLogoWhite.png" loading="lazy" id="nav-logo">
+                <img src="CAssets/tycoLogoWhite.png" id="nav-logo">
             </a>
         </div>
         <ul>
@@ -35,20 +34,20 @@
             <div class="sub-menu-1">
                 <ul>
                     <li onclick="location.href='index.html#products-categories'">
-                        <a href="#products-categories">Our Categories</a>
+                        <a href="test.html#products-categories">Our Categories</a>
                     </li>
                     <li onclick="location.href='index.html#abt-home'">
-                        <a href="#abt-home">
+                        <a href="test.html#abt-home">
                             About Us
                         </a>
                     </li>
                     <li onclick="location.href='index.html#products-home'">
-                        <a href="#products-home">
+                        <a href="test.html#products-home">
                             Our Products
                         </a>
                     </li>
                     <li onclick="location.href='index.html#qt-home'">
-                        <a href="#qt-home">
+                        <a href="test.html#qt-home">
                             Quality Policy
                         </a>
                     </li>
@@ -125,56 +124,53 @@
         </ul>
         </a>
       </nav>
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-          <img src="CAssets/tycoLogoWhite.png" id="nav-logo" style="width: 30%;" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-small-devices"
-        >
-          <ion-icon name="menu-outline" id="menu"></ion-icon>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-small-devices">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item m-3">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown m-3">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Products
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="metallic.html">RTJ Gaskets</a></li>
-                <li><a class="dropdown-item" href="vxAx.html">VX-AX Gaskets</a></li>
-                <li><a class="dropdown-item" href="ixgaskets.html">IX Gaskets</a></li>
-                <li><a class="dropdown-item" href="spiralWound.html">Spiral Wound Gaskest</a></li>
-                <li><a class="dropdown-item" href="kammprofile.html">Kammprofile Gaskets</a></li>
-                <li><a class="dropdown-item" href="MetalJacketed.html">Metal-Jacketed Gaskets</a></li>
-                <li><a class="dropdown-item" href="nonMetallicGaskets.html">Non-Metallic Gaskets</a></li>
-                <li><a class="dropdown-item" href="highTensile.html">High-Tensile Fasteners</a></li>
-              </ul>
-            </li>
-            <li class="nav-item m-3">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li
-              class="nav-item m-3 contact-button-navbar"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <a href="contact.html" class="nav-link contact-button-navbar"
-                >Contact</a
-              >
-            </li>
-          </ul>
+
+      <!-- Medium Devices Nav bar -->
+      <nav class="navbar navbar-expand-lg bg-white" id="med-navBar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="test.html">
+            <img src="CAssets/tyco logo blue.png" id="med-nav-logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="test.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="metallic.html">RTJ Gaskets</a></li>
+                  <li><a class="dropdown-item" href="vxAx.html">VX-AX Gaskets</a></li>
+                  <li><a class="dropdown-item" href="ixgaskets.html">IX Gaskets</a></li>
+                  <li><a class="dropdown-item" href="spiralWound.html">Spiral Wound Gaskest</a></li>
+                  <li><a class="dropdown-item" href="kammprofile.html">Kammprofile Gaskets</a></li>
+                  <li><a class="dropdown-item" href="MetalJacketed.html">Metal-Jacketed Gaskets</a></li>
+                  <li><a class="dropdown-item" href="nonMetallicGaskets.html">Non-Metallic Gaskets</a></li>
+                  <li><a class="dropdown-item" href="highTensile.html">High-Tensile Fasteners</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" aria-disabled="true">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <p id="products-section-head-individual">Our Products</p>
+      <p id="products-text-individual">
+        Explore our comprehensive selection of top-tier industrial gaskets
+      </p>
+      </section>
       <!-- Inner section of the individual product -->
       <section id="ind-product-inner">
         
