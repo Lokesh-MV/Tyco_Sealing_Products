@@ -727,7 +727,7 @@ section#about-text{
 #who-box-right{
     align-self: flex-start;
     width: 45%;
-    background-color: #fff;
+    background-color: #f5f5f5;
     padding: 2% 3%;
     border-radius: 18px;
 }
