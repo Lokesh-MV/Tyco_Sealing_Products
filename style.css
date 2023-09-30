@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
 body{
     font-family: 'Lato', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     --nav-link-load-time : 500ms;
 }
 Body::-webkit-scrollbar {
@@ -82,6 +82,7 @@ section#abt-home{
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: #fff;
 }
 #abt-home-left{
     height: 350px;
@@ -200,7 +201,6 @@ p#abt-home-text span:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 #wh-home-box-1{
     width: 35%;
@@ -245,6 +245,7 @@ p#abt-home-text span:hover{
 /* home products section */
 #products-home{
     padding: 0 4% 2%;
+    background-color: #fff;
 }
 #products-head{
     font-size: 24px;
@@ -266,35 +267,6 @@ p#abt-home-text span:hover{
 }
 
 /* quality-policy-section */
-#quality-home{
-    padding: 2% 6% 3%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-#quality-home-left{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 320px;
-    width:350px;
-    align-self:flex-start;
-    border-radius: 15px;
-    margin-right: 5%;
-    background-image: url(CAssets/quality.png);
-}
-#quality-home-right{
-    width: 35%;
-    position: relative;
-    right: 8%;
-    /* bottom: 0; */
-    background-color: #DCEEF1;
-    padding: 3%;
-    border-radius: 18px;
-    align-self: flex-end;
-}
 #quality-home-head{
     font-size: 22px;
     font-weight: 600;
@@ -447,6 +419,7 @@ p#abt-home-text span:hover{
 #products-categories{
     padding: 2% 4%;
     margin: 0 0 3% 0;
+    background-color: #fff;
 }
 p#categories-head{
     font-family: 'Poppins', sans-serif;
@@ -931,7 +904,7 @@ section#about-text{
 }
 /* product styles section */
 #landing-products{
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     background-image: url(CAssets/products-bg.jpg);
     background-position: center;
@@ -940,25 +913,30 @@ section#about-text{
     position: relative;
 }
 #products-section-head{
-    font-size: 24px;
+    font-size: 56px;
     color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    bottom: 3%;
-    text-align: center;
-    left: 0;
-    right: 0;
+    top: 40%;
+    /* bottom: 0; */
+    left: 13%;
     font-weight: 900;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 #actual-products{
     padding: 2% 4% 3%;
 }
 #products-text{
-    font-size: 20px;
+    font-size: 24px;
     color: #6c757d;
-    width: 30%;
+    /* width: 30%; */
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    color: #f0f0f0;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 #products-row{
     padding: 2%;
@@ -997,18 +975,28 @@ section#about-text{
 } */
 @media only screen and (max-width : 900px){
     #products-text{
-        width: 40%;
+        /* width: 40%; */
     }
+    
 }
 @media only screen and (max-width : 700px){
     #products-text{
-        width: 55%;
+        font-size: 20px;
+    }
+    #products-section-head{
+        font-size: 40px;
     }
 }
 @media only screen and (max-width : 500px){
     #products-text{
-        width: 70%;
+        /* width: 70%; */
         font-size: 18px;
+        top: 48%;
+        left:0;
+    }
+    #products-section-head{
+        font-size: 32px;
+        left: 8%;
     }
 }
 /* Metallic or RTJ Gaskets styling section */

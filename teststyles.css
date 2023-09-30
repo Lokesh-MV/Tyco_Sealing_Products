@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 }
 body{
     font-family: 'Lato', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff !important;
 }
 .menu-bar{
     background-color: transparent;
@@ -264,6 +266,7 @@ p#categories-head{
     }
 }
 #qt-home, #whh{
+    /* background-color: #fff; */
     padding: 2% 4% 4%;
     height: 730px;
     display: flex;
@@ -273,7 +276,7 @@ p#categories-head{
 }
 #qt-home-right, #whh-right{
     width: 430px;
-    background-color: #DCEEF1;
+    background-color: #caf0f8;
     padding: 3%;
     align-self: flex-end;
     border-radius: 12px;
@@ -657,10 +660,12 @@ section#actual-products .animate{
 }
 .product-text-individual, .metallic-gasket-text, .semi-metallic-gasket-text{
     text-align: left;
-    color: #2a2a2a;
+    color: #6C757D;
     padding: 2% 6%;
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 21px;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 600;
 }
 .btn-prd{
     margin: 2% 6% 4%;
