@@ -605,7 +605,15 @@ section#actual-products.show-animate .animate{
 section#actual-products .animate{
     transition: 1s;
 }
-
+section#strengths .animate{
+    transform: translateY(100%);
+}
+section#strengths.show-animate .animate{
+    transform: translateY(0);
+}
+section#strengths .animate{
+    transition: 1s;
+}
 
 #contact-image-section{
     height: 70vh;
