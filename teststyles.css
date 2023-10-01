@@ -269,9 +269,6 @@ p#categories-head {
   margin-top: 2%;
   transition: 1s;
 }
-.product-div {
-  margin: 5px 0;
-}
 .product-box-home:hover {
   cursor: pointer;
   /* background-color: #25d366; */
@@ -280,6 +277,50 @@ p#categories-head {
     visibility: visible;
   }
 }
+div.product-v2 {
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.product-v2-img {
+  width: 100%;
+  border-radius: 15px;
+}
+.product-v2-hover-div {
+  width: 80%;
+  height: 80%;
+  background-color: #264b8a;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 8%;
+  right: 8%;
+  margin: auto;
+  display: none;
+  padding: 16px;
+  color: #fff;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 19px;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.product-v2-head {
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 0;
+}
+
+div.product-v2:hover {
+  .product-v2-hover-div {
+    display: block;
+  }
+  border: 5px solid #264b8a;
+}
+
 #qt-home,
 #whh {
   /* background-color: #fff; */
@@ -290,6 +331,7 @@ p#categories-head {
   align-items: center;
   justify-content: center;
 }
+
 #qt-home-right,
 #whh-right {
   width: 430px;
@@ -583,22 +625,45 @@ section#who-we-are .animate {
   transition: 1s;
 }
 
-section#protective-coating .animate {
+section#protective-coating .animate-left,
+section#coating-gaskets .animate-left {
   transform: translateX(-100%);
 }
-section#protective-coating.show-animate .animate {
-  transform: translateX(0);
-}
-section#protective-coating .animate {
-  transition: 1s;
-}
-section#RTJ-types .animate {
+section#protective-coating .animate-right,
+section#coating-gaskets .animate-right {
   transform: translateX(100%);
 }
-section#RTJ-types.show-animate .animate {
+section#protective-coating.show-animate .animate-left,
+section#protective-coating.show-animate .animate-right,
+section#coating-gaskets.show-animate .animate-left,
+section#coating-gaskets.show-animate .animate-right {
   transform: translateX(0);
 }
-section#RTJ-types .animate {
+section#protective-coating .animate-left,
+section#coating-gaskets .animate-left,
+section#protective-coating .animate-right,
+section#coating-gaskets .animate-right {
+  transition: 1s;
+}
+section#RTJ-types .animate-left {
+  transform: translateX(-100%);
+}
+section#RTJ-types .animate-right {
+  transform: translateX(100%);
+}
+section#RTJ-types .animate-center {
+  transform: scale(0.6);
+}
+section#RTJ-types.show-animate .animate-left,
+section#RTJ-types.show-animate .animate-right {
+  transform: translateX(0);
+}
+section#RTJ-types.show-animate .animate-center {
+  transform: scale(1);
+}
+section#RTJ-types .animate-left,
+section#RTJ-types .animate-right,
+section#RTJ-types .animate-center {
   transition: 1s;
 }
 section#semi-metallic-products .animate {
