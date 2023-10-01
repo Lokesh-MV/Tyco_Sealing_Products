@@ -1001,3 +1001,6 @@ section#semi-metallic-products .animate-right {
 .loaded #loader {
   opacity: 0;
 }
+.str-box:hover {
+  border: 5px solid #264b8a;
+}

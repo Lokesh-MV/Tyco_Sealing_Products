@@ -827,6 +827,7 @@ section#about-text {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  transition: 0.1s;
 }
 .str-box {
   text-align: center;
@@ -840,6 +841,7 @@ section#about-text {
   background-image: url(CAssets/strBG.png);
   width: 25%;
   height: 450px;
+  transition: 0.1s;
 }
 .str-inner-img {
   width: 50%;
