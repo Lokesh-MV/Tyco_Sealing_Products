@@ -47,3 +47,21 @@ document.addEventListener("DOMContentLoaded", function(){
             // }
         })
     }
+    window.addEventListener("scroll",() => {
+        let whiteLogo = document.getElementById("white-logo");
+        let blueLogo = document.getElementById("logo-blue");
+        var navBar = document.getElementById("test-nav");
+        navBar.classList.toggle("sticky", window.scrollY > 500);
+        navBar.classList.toggle("navBarFixed", window.scrollY > 500);
+        if (window.scrollY > 500){
+            // blueLogo
+            whiteLogo.style.display = "none";
+            blueLogo.style.display = "block";
+        }
+    })
+
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            document.querySelector("body").classList.add("loaded");
+        }, 10)
+      });
