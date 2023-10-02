@@ -1004,3 +1004,93 @@ section#semi-metallic-products .animate-right {
 .str-box:hover {
   border: 5px solid #264b8a;
 }
+section#vm {
+  padding: 2% 0;
+}
+
+#RTJ-prd-img {
+  width: 60%;
+}
+.prd-text-side {
+  background: url(CAssets/strBG.png);
+  text-align: left;
+}
+section#wh-v2 {
+  /* padding: 3% 4%; */
+  background-color: #264b8a;
+  color: #fff;
+  margin: 2% 0;
+}
+#wh-v2-left {
+  /* background-color: #25d366; */
+  /* padding: 2%; */
+  text-align: left;
+  background: url(CAssets/EXP.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#wh-v2-img {
+  width: 100%;
+}
+#wh-v2-right {
+  padding: 4% 3%;
+}
+.wh-v2-head {
+  font-size: 24px;
+  font-weight: 600;
+}
+.wh-v2-text {
+  color: #d5d5d5;
+  font-size: 19px;
+}
+section#wh-v2 .animate-left {
+  transform: translateX(-100%);
+}
+section#wh-v2.show-animate .animate-left {
+  transform: translateX(0);
+}
+section#wh-v2 .animate-left {
+  transition: 1s;
+}
+section#wh-v2 .animate-right {
+  transform: translateX(100%);
+}
+section#wh-v2.show-animate .animate-right {
+  transform: translateX(0);
+}
+section#wh-v2 .animate-right {
+  transition: 1s;
+}
+section#qa-v2 {
+  margin: 4% 0 8%;
+  background-color: #264b8a;
+  color: #fff;
+}
+#qa-v2-right {
+  background: url(CAssets/EXP.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#qa-v2-left {
+  padding: 4%;
+}
+#qa-v2-left p {
+  /* margin-bottom: 0; */
+}
+.qa-v2-head {
+  font-size: 20px;
+  font-weight: 600;
+}
+.qa-v2-text {
+  color: #d5d5d5;
+  font-size: 18px;
+}
+#water-mark-footer {
+  opacity: 0.1;
+  position: absolute;
+  right: 70px;
+  bottom: 0;
+  width: 35%;
+}

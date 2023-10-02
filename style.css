@@ -277,6 +277,7 @@ span.text {
   background-color: #264b8a;
   padding: 2% 4%;
   color: #dee2e6;
+  position: relative;
 }
 #footer-row {
   margin: 2% 0 2% 0;
