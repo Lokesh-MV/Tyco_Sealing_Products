@@ -48,11 +48,14 @@ document.addEventListener("DOMContentLoaded", function(){
         })
     }
     window.addEventListener("scroll",() => {
+        let link = document.getElementsByClassName("main-menu-element");
         let whiteLogo = document.getElementById("white-logo");
         let blueLogo = document.getElementById("logo-blue");
         var navBar = document.getElementById("test-nav");
         navBar.classList.toggle("sticky", window.scrollY > 600);
         navBar.classList.toggle("navBarFixed", window.scrollY > 700);
+        
+        
     })
 
     document.addEventListener("DOMContentLoaded", function() {

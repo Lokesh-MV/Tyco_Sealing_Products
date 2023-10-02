@@ -278,6 +278,7 @@ span.text {
   padding: 2% 4%;
   color: #dee2e6;
   position: relative;
+  z-index: 999999999999;
 }
 #footer-row {
   margin: 2% 0 2% 0;
@@ -310,15 +311,20 @@ span.text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* justify-content: space-around; */
 }
 #foot-nav-list {
-  height: 100%;
+  /* height: 100%; */
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   list-style-type: none;
   padding: 0;
+}
+#foot-nav-list li {
+  margin: 5%;
 }
 #foot-nav-list a {
   text-decoration: none;

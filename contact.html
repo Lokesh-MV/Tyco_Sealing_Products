@@ -199,7 +199,7 @@
               <p id="contact-form-head">
                 ENQUIRY FORM
               </p>
-              <form action="/contact" method="post">
+              <form action="/contact" method="post" onsubmit="sendEmail(); reset(); return false">
                 <label for="username">Enter your name <span>*</span></label>
                 <input
                   type="text"
@@ -378,5 +378,24 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+      function sendEmail() {
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "lokeshmv65@gmail.com",
+    Password : "4C002D2B0A43FFD6EA2DF4863A9E946C5410",
+    To : 'venkatalokesh789@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New From the contact query",
+    Body : "And this is the body"
+    }).then(
+    message => alert(message)
+    );
+      }
+    </script>
   </body>
 </html>
