@@ -284,16 +284,45 @@
       </section>
       <!-- footer section -->
       <section id="footer">
+
+        <div class="touch">
+          <p class="touch-head">
+            Get in Touch
+          </p>
+          <form action="/" method="post" id="touch-form">
+            <input type="text" name="name" id="touch-name" placeholder="Enter your name">
+            <input type="tel" name="mobile" id="touch-mail" placeholder="Enter your mobile or email">
+            <input type="text" name="company" id="touch-company-name" placeholder="Enter your Comany name">
+  
+            <button type="submit" id="touch-submit">Submit</button>
+          </form>
+          <div id="socials" style="text-align: center;margin: 3% 0 2%;">
+            <a href="#" class="social-icon">
+              <img src="CAssets/linkedin.png" class="social-icon-img">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="CAssets/instagram.png" class="social-icon-img">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="CAssets/facebook.png" class="social-icon-img">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="CAssets/twitter.png" class="social-icon-img">
+            </a>
+          </div>
+        </div>
+        <hr style="padding:2% 0;" />
         <div class="row" id="footer-row">
-          <div class="col-md-4 col-sm-6" style="margin-bottom: 4%">
+          
+          <div class="col-md-4 col-sm-6 animate" style="margin-bottom: 4%">
             <img src="CAssets/tycoLogoWhite.png" id="footer-logo" />
-            <p id="address">
+            <!-- <p id="address">
               TYCO Sealing Products India Pvt. Ltd.,<br />
               H.No.9-228/A/1 Sy.No.551, <br />
               Annojiguda to NTPC Road, Near ORR
               <br />Service Road, Ghatkesar, Medchal <br />
               Telangana, 501301
-            </p>
+            </p> -->
             <div id="mail">
               <ion-icon name="mail-outline" class="foot-icon"></ion-icon>
               info@tycosealing.com
@@ -301,11 +330,51 @@
             <div id="mail">
               <ion-icon name="call-outline" class="foot-icon"></ion-icon>
               +91 XXX-XX-XXXXX
+            </div> 
+            <div id="footer-products-links-div">
+              <p class="prd-footer-head">
+                Our Products
+              </p>
+              <a href="#" class="footer-link-products">
+                RTJ Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                VX-AX Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                IX Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                Spiral Wound Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                 Metal Jacketed Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                Kammprofile Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                Rubber Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                PTFE Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                Non-Asbestos Gaskets
+              </a>
+              <a href="#" class="footer-link-products">
+                High Tensile Fasteners
+              </a>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6" id="foot-nav">
+          <div class="col-md-4 col-sm-6 animate" id="foot-nav">
             <p id="foot-nav-head">Navigation</p>
             <ul id="foot-nav-list">
+              <li>
+                <a href="#">
+                  Home
+                </a>
+              </li>
               <li>
                 <a href="metallic.html">
                   Metallic Gaskets
@@ -332,26 +401,14 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4" style="margin: auto">
-            <div id="contact-foot">
-              <p id="con-foot-head">Contact Us</p>
-              <div id="con-links-box">
-                <a href="https://www.linkedin.com/in/tyco-sealing-products-4b4b6a289/" target="_blank">
-                  <img src="CAssets/linkedin.png" class="contact-icon" />
-                </a>
-                <a href="https://www.instagram.com/tycosealingindia/" target="_blank">
-                  <img src="CAssets/instagram.png" class="contact-icon" />
-                </a>
-                <a href="#" target="_blank">
-                  <img src="CAssets/facebook.png" class="contact-icon" />
-                </a>
-                <a href="#" target="_blank">
-                  <img src="CAssets/twitter.png" class="contact-icon" />
-                </a>
-              </div>
-            </div>
+  
+          <div class="col-md-4" style="padding: 4% 2%;" id="right-most">
+            <a href="CAssets/favicon.ico" download>
+              <i class="fa-solid fa-download"></i> Download Brochure
+            </a>
           </div>
         </div>
+        <img src="CAssets/tycologoWheel.png" id="water-mark-footer">
         <p id="copyright">
           Copyright © 2023 Tyco Sealing Pvt. Ltd. All Rights Reserved
         </p>

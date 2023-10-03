@@ -1023,15 +1023,16 @@ section#wh-v2 {
 }
 #wh-v2-left {
   /* background-color: #25d366; */
-  /* padding: 2%; */
+  padding: 3%;
   text-align: left;
-  background: url(CAssets/EXP.jpg);
+  /* background: url(CAssets/EXP.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 #wh-v2-img {
   width: 100%;
+  height: 100%;
 }
 #wh-v2-right {
   padding: 4% 3%;
@@ -1074,10 +1075,15 @@ section#qa-v2 {
   color: #fff;
 }
 #qa-v2-right {
-  background: url(CAssets/EXP.jpg);
+  /* background: url(CAssets/EXP.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 3%;
+}
+#qa-v2-right img {
+  height: 100%;
+  width: 100%;
 }
 #qa-v2-left {
   padding: 4%;
@@ -1148,19 +1154,25 @@ section#prd-v2-section {
 }
 .prd-v2 {
   width: 100%;
+  background-color: #264b8a;
   /* margin: 2% 0; */
   /* border: ; */
   /* background-color: #25d366; */
 }
 .prd-v2-img {
   width: 100%;
+  height: 100%;
+  /* margin: 2%; */
+}
+.prd-img-side {
+  padding: 4%;
 }
 .prd-v2-right {
   padding: 4% 8%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: #264b8a;
   color: #fff;
 }
@@ -1169,6 +1181,7 @@ section#prd-v2-section {
   font-weight: 600;
 }
 .prd-v2-text {
+  margin-top: 3%;
   font-size: 18px;
 }
 .prd-v2-right button {
