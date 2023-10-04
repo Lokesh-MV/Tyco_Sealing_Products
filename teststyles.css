@@ -52,7 +52,9 @@ body {
 .menu-bar ul li:hover,
 .active {
   background: #264b8a;
-  /* border-radius: 3px; */
+}
+.menu-bar ul li:hover:last-child {
+  background: none;
 }
 .sub-menu-1 {
   width: 100%;
@@ -822,7 +824,7 @@ section#semi-metallic-products .animate-right {
   position: absolute;
   z-index: 99999999;
   bottom: 100px;
-  left: -3%s;
+  left: -3%;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -1300,4 +1302,22 @@ p.ind-product-text-ext span {
   100% {
     transform: rotate(360deg);
   }
+}
+@media only screen and (max-width: 600px) {
+  .touch form {
+    flex-direction: column;
+  }
+  #touch-form input,
+  #touch-submit {
+    margin-top: 5%;
+    width: 90%;
+  }
+  #touch-submit {
+    margin-bottom: 5%;
+  }
+}
+#contact-btn-nav {
+  background-image: linear-gradient(50deg, #54569d, #607bc0);
+  padding: 13%;
+  border-radius: 8px;
 }
