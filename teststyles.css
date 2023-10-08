@@ -848,7 +848,7 @@ section#semi-metallic-products .animate-right {
 }
 #test-nav.sticky,
 #nv-sm.sticky {
-  background: #fff;
+  background: #264b8a;
   position: sticky;
   transition: 0.5s;
 }
@@ -1163,8 +1163,8 @@ section#prd-v2-section {
 }
 .prd-v2-img {
   width: 100%;
-  height: 100%;
-  /* margin: 2%; */
+  height: 90%;
+  padding-top: 3%;
 }
 .prd-img-side {
   padding: 4%;
@@ -1320,4 +1320,46 @@ p.ind-product-text-ext span {
   background-image: linear-gradient(50deg, #54569d, #607bc0);
   padding: 13%;
   border-radius: 8px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  /* padding: 4% 0; */
+}
+th {
+  background-color: #264b8a;
+  color: #f0f0f0;
+  padding: 1.5%;
+}
+td {
+  background-color: #eee;
+  padding: 1%;
+  border: 1px solid #2a2a2a;
+}
+#benefits {
+  padding: 2% 0 0;
+  margin-bottom: 0;
+}
+#extra-points li {
+  font-size: 19px;
+  color: #6c757d;
+  padding: 8px 0 0;
+}
+#extra-points li span {
+  font-weight: 600;
+}
+#abt-us-head {
+  text-align: center;
+  font-size: 22px;
+  color: #264b8a;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+table#spiral-table {
+  width: 60%;
+}
+@media only screen and (max-width: 850px) {
+  table#spiral-table {
+    width: 100%;
+  }
 }

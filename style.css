@@ -1065,8 +1065,16 @@ section#rtj-gaskets {
 }
 #RTJ-main-head {
   font-size: 22px;
+  font-weight: 600;
   color: #264b8a;
   font-family: "Poppins", sans-serif;
+}
+.Rtj-text span {
+  font-size: 20px;
+  color: #264b8a;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1%;
 }
 #Rtj-text-box {
   padding: 0.5% 2% 1%;
