@@ -19,7 +19,7 @@ Body::-webkit-scrollbar {
 }
 /* background Image section */
 section#landing {
-  background: url(CAssets/BackgroundImage.png);
+  background: url(CAssets/bgVideo.mp4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -274,7 +274,7 @@ span.text {
 }
 /* footer section */
 #footer {
-  background-color: #264b8a;
+  background-color: #18244c;
   padding: 2% 4%;
   color: #dee2e6;
   position: relative;
@@ -656,12 +656,21 @@ p#categories-head {
 }
 /* about section styles */
 #about-hero {
-  height: 100vh;
+  height: 90%;
   width: 100%;
   background-image: url(CAssets/aboutBg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#about-hero video {
+  height: fit-content;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  #about-hero video {
+    display: none;
+  }
 }
 #abt-landing-text {
   font-size: 45px;

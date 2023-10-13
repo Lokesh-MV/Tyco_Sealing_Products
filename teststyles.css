@@ -51,7 +51,7 @@ body {
 }
 .menu-bar ul li:hover,
 .active {
-  background: #264b8a;
+  background: #18244c;
 }
 .menu-bar ul li:hover:last-child {
   background: none;
@@ -77,8 +77,8 @@ body {
   width: 100%;
   right: 0;
   left: 0;
-  margin-top: 27px;
-  background: #264b8a;
+  margin-top: 25px;
+  background: #18244c;
   cursor: pointer;
 }
 .sub-menu ul {
@@ -89,15 +89,16 @@ body {
   justify-content: space-evenly;
 }
 .sub-menu-1 ul li {
-  width: 265px;
-  padding: 2%;
+  width: 310px;
+  /* padding: 2%; */
+  padding: 10px;
 }
 .sub-menu-1 ul li a {
   font-size: 17px;
 }
 .sub-menu-1 ul li:hover {
   /* background-color: #ff9e00; */
-  border: 2px solid #f0f0f0;
+  border: 2px solid #41e09b;
   font-weight: 600;
 }
 #nav-logo {
@@ -153,13 +154,25 @@ Body::-webkit-scrollbar {
   width: 100%;
 }
 #hero-img-div {
-  height: 100%;
+  height: 90%;
   background: url(CAssets/BackgroundImage.png);
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
+}
+@media only screen and (max-width: 900px) {
+  #hero-img-div video {
+    display: none;
+  }
+  #hero-img-div {
+    height: 100%;
+  }
+}
+#hero-img-div video {
+  width: 100%;
+  height: fit-content;
 }
 div#bottom-scroll {
   position: absolute;
@@ -848,7 +861,7 @@ section#semi-metallic-products .animate-right {
 }
 #test-nav.sticky,
 #nv-sm.sticky {
-  background: #264b8a;
+  background: #18244c;
   position: sticky;
   transition: 0.5s;
 }
@@ -1102,8 +1115,8 @@ section#qa-v2 {
   opacity: 0.1;
   position: absolute;
   right: 70px;
-  bottom: 90px;
-  width: 35%;
+  bottom: 10px;
+  width: 30%;
 }
 .footer-link-products {
   display: block;
@@ -1157,14 +1170,21 @@ section#prd-v2-section {
 .prd-v2 {
   width: 100%;
   background-color: #264b8a;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   /* margin: 2% 0; */
   /* border: ; */
   /* background-color: #25d366; */
 }
 .prd-v2-img {
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
   padding-top: 3%;
+  border-radius: 22px;
+  border-top-right-radius: 42px;
+  border-top-left-radius: 42px;
 }
 .prd-img-side {
   padding: 4%;
@@ -1218,7 +1238,10 @@ p.touch-head {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+#touch-form {
+  position: relative;
 }
 #touch-mail {
   margin-bottom: 0 !important;
@@ -1226,13 +1249,17 @@ p.touch-head {
   border-radius: 0;
 }
 #touch-submit {
-  background-color: #f0f0f0;
-  color: #264b8a;
+  background-color: #41e09b;
+  /* color: #264b8a; */
+  border-radius: 100%;
   font-size: 18px;
   font-weight: 600;
-  padding: 6px 16px;
+  padding: 8px 12px;
   border: none;
+  position: absolute;
+  right: 10px;
   /* border-radius: 8px; */
+  font-size: 22px;
 }
 #touch-submit:hover {
   background-color: #ff9e00;
@@ -1243,12 +1270,45 @@ p.touch-head {
   /* border-radius: 6px; */
   border: 1px solid #f0f0f0;
   background-color: transparent;
-  color: #f0f0f0;
-  margin: 0 3%;
+  color: #2a2a2a;
+  padding: 15px 20px;
+  background-color: #f0f0f0;
+  /* margin: 0 3%; */
+  font-size: 18px;
   width: 60%;
 }
+@media only screen and (max-width: 770px) {
+  #touch-submit {
+    position: unset;
+    border-radius: 0;
+  }
+  #touch-form input {
+    border-radius: 0 !important;
+  }
+}
+#touch-form input:first-child {
+  /* border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%; */
+  /* padding: 1% 2%; */
+  padding: 15px 20px;
+  border-radius: 50px 0 0 50px;
+  border-right: 1px solid #2a2a2a;
+}
+#touch-mail {
+  border-right: 1px solid #2a2a2a !important;
+  padding: 9px 20px !important;
+  padding: 15px 20px !important;
+}
+#touch-company-name {
+  padding: 15px 20px;
+  border-radius: 0 50px 50px 0;
+  border-right: 2px solid #2a2a2a;
+}
 #touch-form input::placeholder {
-  color: #d5d5d5;
+  color: #6a6a6a;
+}
+#touch-form input:focus {
+  outline: none;
 }
 .social-icon {
   text-decoration: none;
@@ -1317,7 +1377,7 @@ p.ind-product-text-ext span {
   }
 }
 #contact-btn-nav {
-  background-image: linear-gradient(50deg, #54569d, #607bc0);
+  background-image: linear-gradient(to right, #41e09b 50%, #41e5d8 100%);
   padding: 13%;
   border-radius: 8px;
 }
@@ -1362,4 +1422,8 @@ table#spiral-table {
   table#spiral-table {
     width: 100%;
   }
+}
+.nav-icon {
+  width: 22%;
+  margin: 4px;
 }

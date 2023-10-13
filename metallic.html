@@ -35,7 +35,7 @@
             </a>
         </div>
         <ul>
-          <li>
+          <li onclick="location.href='index.html'">
             <a href="index.html" class="main-menu-element">HOME</a>
           </li>
           <li>
@@ -43,15 +43,19 @@
             <div class="sub-menu-1">
               <ul>
                 <li onclick="location.href='metallic.html'">
+                  <img src="CAssets/metallicIcon.png" class="nav-icon">
                     <a href="metallic.html">Metallic Gaskets</a>
                 </li>
                 <li onclick="location.href='semiMetallic.html'">
+                  <img src="CAssets/semi-metallicIcon.png" class="nav-icon">
                     <a href="semiMetallic.html">Semi Metallic Gaskets</a>
                 </li>
                 <li onclick="location.href='nonMetallicGaskets.html'">
+                  <img src="CAssets/Non-metallicIcon.png" class="nav-icon">
                     <a href="nonMetallicGaskets.html">Non Metallic Gaskets</a>
                 </li>
                 <li onclick="location.href='highTensile.html'">
+                  <img src="CAssets/highTensileIcon.png" class="nav-icon">
                     <a href="highTensile.html">High Tensile Fasteners</a>
                 </li>
               </ul>  
@@ -61,22 +65,22 @@
             <a href="about.html" class="main-menu-element">ABOUT</a>
             <div class="sub-menu-1">
                 <ul>
-                    <li onclick="location.href='about.html#about-text'">
+                    <li onclick="location.href='about.html#about-text'" style="padding: 20px 0;">
                         <a href="about.html#about-text">
                             About Us
                         </a>
                     </li>
-                    <li onclick="location.href='about.html#about-text'">
+                    <li onclick="location.href='about.html#about-text'" style="padding: 20px 0;">
                         <a href="about.html#about-text">
                             Who we are
                         </a>
                     </li>
-                    <li onclick="location.href='about.html#qa-v2'">
+                    <li onclick="location.href='about.html#qa-v2'" style="padding: 20px 0;">
                         <a href="about.html#qa-v2">
                             Our Values
                         </a>
                     </li>
-                    <li onclick="location.href='about.html#strengths'">
+                    <li onclick="location.href='about.html#strengths'" style="padding: 20px 0;">
                         <a href="about.html#strengths">
                             Our Strengths
                         </a>
@@ -84,7 +88,7 @@
                 </ul>
             </div>
           </li>
-          <li>
+          <li onclick="location.href='contact.html'">
             <a href="contact.html" id="contact-btn-nav">CONTACT</a>
           </li>
         </ul>
@@ -145,7 +149,7 @@
           <span>Tyco Industries</span>
         </div>
         <div id="Rtj">
-          <img src="CAssets/RTJ .jpg" />
+          <img src="CAssets/RTJ .jpg" style="border: none;" />
           <div id="Rtj-text-box">
             <p id="RTJ-main-head">Metallic Gaskets</p>
             <p class="Rtj-text">
@@ -166,7 +170,7 @@
         </div>
         <p class="Rtj-text" id="RTJ-text-para-3">
           <span>
-            RTJ Gaskets
+            Ring Type Joint Gaskets (RTJ Gaskets)
           </span>
           Ring Type Joint Gaskets are metallic gaskets that are precision
           machined to fit into a grooved chamber on a flange face. They are
@@ -177,22 +181,50 @@
           high-pressure and high-temperature applications, where they provide
           superior sealing performance compared to other types of gaskets.
         </p>
-        <p class="Rtj-text">
-          Selecting the right material for Ring Type Joint (RTJ) gaskets is crucial for effective sealing in various applications. <br>
-          Gasket material selection hinges on two key factors: compatibility with the fluid being sealed and the flange's hardness. Ideally, the gasket material should be softer than the flange material to allow for proper gasket deformation without harming the flange surface. <br>
-          •	Soft Iron: Ideal for low-pressure applications with non-corrosive or non-abrasive fluids. <br>
-          •	Low Carbon Steel: Suitable for general-purpose use with low to moderate pressure and temperature conditions. <br>
-          •	Stainless Steel: Resistant to corrosion, suitable for high-pressure and temperature applications, and compatible with a wide range of fluids. Common stainless steel grades: 304, 304L, 316, 316L, 321, 347, and 410. <br>
-          •	Inconel: Offers excellent resistance to high temperatures and aggressive chemical environments, making it suitable for extreme conditions. <br>
-          •	Monel: Resistant to corrosive substances, ideal for offshore and marine applications. <br>
-          •	Duplex and Super Duplex: Ideal for demanding applications requiring robust strength, outstanding corrosion resistance.
-        </p>
-        <p class="Rtj-text">
-          Hastelloy: Designed for use in highly corrosive and high-temperature environments.
-        </p>
-        <p class="Rtj-text">
-          f5:provides exceptional chemical resistance, high-temperature performance, mechanical strength, tight sealing, durability, and compatibility with diverse flange materials, making it ideal for demanding industrial uses.
-        </p>
+        <ul id="extra-points">
+          <li>
+            <span>
+              Soft Iron:
+            </span>
+            Ideal for low-pressure applications with non-corrosive or non-abrasive fluids.
+          </li>
+          <li>
+            <span>
+              Low Carbon Steel:
+            </span>
+            Suitable for general-purpose use with low to moderate pressure and temperature conditions.
+          </li>
+          <li>
+            <span>
+              Inconel:
+            </span>
+            Offers excellent resistance to high temperatures and aggressive chemical environments, making it suitable for extreme conditions.
+          </li>
+          <li>
+            <span>
+              Monel:
+            </span>
+            Resistant to corrosive substances, ideal for offshore and marine applications.
+          </li>
+          <li>
+            <span>
+              Duplex and Super Duplex:
+            </span>
+            Ideal for demanding applications requiring robust strength, outstanding corrosion resistance.
+          </li>
+          <li>
+            <span>
+              Hastelloy:
+            </span>
+            Designed for use in highly corrosive and high-temperature environments.
+          </li>
+          <li>
+            <span>
+              f5:
+            </span>
+            provides exceptional chemical resistance, high-temperature performance, mechanical strength, tight sealing, durability, and compatibility with diverse flange materials, making it ideal for demanding industrial uses.
+          </li>
+        </ul>
         <table>
           <tr>
             <th>
@@ -202,7 +234,10 @@
               UNS Number
             </th>
             <th>
-              Maximum Brinell Hardness
+              Max. Brinell Hardness
+            </th>
+            <th>
+              Max. Rockwell Hardness
             </th>
             <th>Description</th>
           </tr>
@@ -210,72 +245,84 @@
             <td>Soft Iron</td>
             <td></td>
             <td>90</td>
+            <td>56</td>
             <td>D</td>
           </tr>
           <tr>
             <td>Low Carbon Steel</td>
             <td></td>
             <td>120</td>
+            <td>68</td>
             <td>S</td>
           </tr>
           <tr>
             <td>4-6% Chrome 1/2% Moly</td>
             <td>K42544</td>
             <td>130</td>
+            <td>75</td>
             <td>F5</td>
           </tr>
           <tr>
             <td>Type 304 Stainless Steel</td>
             <td>S30400</td>
             <td>160</td>
+            <td>83</td>
             <td>S304</td>
           </tr>
           <tr>
             <td>Type 316 Stainless Steel</td>
             <td>S31600</td>
             <td>160</td>
+            <td>83</td>
             <td>S316</td>
           </tr>
           <tr>
             <td>Type 347 Stainless Steel</td>
             <td>S34700 </td>
             <td>160</td>
+            <td>83</td>
             <td>S347</td>
           </tr>
           <tr>
             <td>Type 410 Stainless Steel</td>
             <td>S41000</td>
             <td>170</td>
+            <td>86</td>
             <td>S410</td>
           </tr>
           <tr>
             <td>Titanium Grade 2</td>
             <td>R50400</td>
-            <td></td>
+            <td>215</td>
+            <td>94</td>
             <td></td>
           </tr>
           <tr>
             <td>Alloy 600</td>
             <td>N06600 </td>
             <td>200</td>
+            <td>92</td>
             <td></td>
           </tr>
           <tr>
             <td>Alloy 625</td>
             <td>N06625</td>
             <td>200</td>
+            <td>92</td>
             <td></td>
           </tr>
           <tr>
             <td>Alloy 800</td>
             <td>N08800</td>
             <td>200</td>
+            <td>92</td>
             <td></td>
           </tr>
           <tr>
             <td>Alloy 825</td>
             <td>N08825</td>
             <td>160</td>
+            <td>92</td>
             <td></td>
           </tr>
           <tr>
@@ -283,17 +330,20 @@
             <td>N10001</td>
             <td>200</td>
             <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>Alloy C276</td>
             <td>N10276 </td>
             <td>200</td>
+            <td>92</td>
             <td></td>
           </tr>
           <tr>
             <td>SMO 254</td>
             <td>S32154 </td>
             <td>180</td>
+            <td>89</td>
             <td></td>
           </tr>
           <tr>
@@ -301,11 +351,13 @@
             <td></td>
             <td>200</td>
             <td></td>
+            <td></td>
           </tr>
           <tr>
             <td>Super Duplex</td>
             <td>S31803</td>
-            <td></td>
+            <td>200</td>
+            <td>92</td>
             <td></td>
           </tr>
         </table>
@@ -352,7 +404,7 @@
 
     <section id="prd-v2-section">
       <div class="prd-v2 row">
-        <div class="col-md-6 animate-left">
+        <div class="col-md-6 animate-left" style="text-align: center;">
           <img src="CAssets/R-oval.jpg" class="prd-v2-img">
         </div>
         <div class="col-md-6 prd-v2-right animate-right" >
@@ -362,9 +414,6 @@
          <p class="prd-v2-text">
           R-Oval type gaskets, abbreviated as OVL, are designed for sealing flange grooves with a flat bottom v-groove or a bottom radius groove. They offer reliable performance in pressures up to 10,000 PSI, although the octagonal type boasts a higher sealing coefficient and is generally preferred.
          </p>
-         <!-- <button type="button">
-            Know more
-         </button> -->
         </div>
       </div>
 
@@ -380,13 +429,13 @@
               Know more
            </button> -->
         </div>
-        <div class="col-md-6 col-sm-6 animate-right">
+        <div class="col-md-6 col-sm-6 animate-right" style="text-align: center;">
           <img src="CAssets/R-octogonal.jpg" class="prd-v2-img">
         </div>
       </div>
 
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-left" style="text-align: center;">
           <img src="CAssets/RX.jpg" class="prd-v2-img">
         </div>
         <div class="col-md-6 col-sm-6 prd-v2-right" >
@@ -399,7 +448,7 @@
         </div>
       </div>
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6 prd-v2-right" >
+        <div class="col-md-6 col-sm-6 prd-v2-right animate-left" >
           <p class="prd-v2-head">
             BX Gaskets
            </p>
@@ -407,15 +456,15 @@
             BX gaskets, compatible with R Type Oval and Octagonal rings for API 6BX flanges, withstand pressures up to 20,000 PSI. A pressure balance hole is incorporated in BX gaskets which ensures the pressure equalisation. Our range includes BX150 to BX303 gaskets for various applications.
            </p>
         </div>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-right" style="text-align: center;">
           <img src="CAssets/BX.jpg" class="prd-v2-img">
         </div>
       </div>
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-left" style="text-align: center;">
           <img src="CAssets/RX.jpg" class="prd-v2-img">
         </div>
-        <div class="col-md-6 col-sm-6 prd-v2-right" >
+        <div class="col-md-6 col-sm-6 prd-v2-right animate-right"  >
           <p class="prd-v2-head">
             SRX Gaskets
            </p>
@@ -425,7 +474,7 @@
         </div>
       </div>
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6 prd-v2-right" >
+        <div class="col-md-6 col-sm-6 prd-v2-right animate-right" >
           <p class="prd-v2-head">
             SBX Gaskets
            </p>
@@ -433,15 +482,15 @@
             SBX gaskets are vital for high-pressure sealing in challenging industrial settings. They resemble Type BX Ring Type Joint gaskets but feature intersecting vent holes (prefixed with "S") for pressure-less metal-to-metal contact, meeting according to ASME B16.20 and API Stdandard 6a standards.
            </p>
         </div>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-left" style="text-align: center;">
           <img src="CAssets/BX.jpg" class="prd-v2-img">
         </div>
       </div>
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-left" style="text-align: center;">
           <img src="CAssets/RX.jpg" class="prd-v2-img">
         </div>
-        <div class="col-md-6 col-sm-6 prd-v2-right" >
+        <div class="col-md-6 col-sm-6 prd-v2-right animate-right" >
           <p class="prd-v2-head">
             Lens RTJ Gaskets
            </p>
@@ -451,7 +500,7 @@
         </div>
       </div>
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6 prd-v2-right" >
+        <div class="col-md-6 col-sm-6 prd-v2-right animate-left" >
           <p class="prd-v2-head">
             VX-AX Gaskets
            </p>
@@ -462,15 +511,15 @@
               Know more
            </button>
         </div>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-right" style="text-align: center;">
           <img src="CAssets/VX-AX.jpg" class="prd-v2-img">
         </div>
       </div>
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-left" style="text-align: center;">
           <img src="CAssets/Ix.jpg" class="prd-v2-img">
         </div>
-        <div class="col-md-6 col-sm-6 prd-v2-right" >
+        <div class="col-md-6 col-sm-6 prd-v2-right animate-right" >
           <p class="prd-v2-head">
             IX Gaskets
            </p>
@@ -483,7 +532,7 @@
         </div>
       </div>
       <div class="prd-v2 row">
-        <div class="col-md-6 col-sm-6 prd-v2-right" >
+        <div class="col-md-6 col-sm-6 prd-v2-right animate-left" >
           <p class="prd-v2-head">
             Protective Coating
            </p>
@@ -497,7 +546,7 @@
               Know more
            </button>
         </div>
-        <div class="col-md-6 col-sm-6">
+        <div class="col-md-6 col-sm-6 animate-right" style="text-align: center;">
           <img src="CAssets/Protective Coating.jpg" class="prd-v2-img">
         </div>
       </div>
@@ -513,8 +562,7 @@
           <input type="text" name="name" id="touch-name" placeholder="Enter your name">
           <input type="tel" name="mobile" id="touch-mail" placeholder="Enter your mobile or email">
           <input type="text" name="company" id="touch-company-name" placeholder="Enter your Comany name">
-
-          <button type="submit" id="touch-submit">Submit</button>
+          <button type="submit" id="touch-submit"><ion-icon name="send-outline"></ion-icon></button>
         </form>
         <div id="socials" style="text-align: center;margin: 3% 0 2%;">
           <a href="https://www.linkedin.com/in/tyco-sealing-products-4b4b6a289/" class="social-icon">
@@ -533,6 +581,7 @@
       </div>
       <hr style="padding:2% 0;" />
       <div class="row" id="footer-row">
+        
         <div class="col-md-4 col-sm-6 animate" style="margin-bottom: 4%">
           <img src="CAssets/tycoLogoWhite.png" id="footer-logo" />
           <div id="mail">
@@ -543,7 +592,7 @@
             <ion-icon name="call-outline" class="foot-icon"></ion-icon>
             +91 XXX-XX-XXXXX
           </div> 
-          <div id="footer-products-links-div">
+          <!-- <div id="footer-products-links-div">
             <p class="prd-footer-head">
               Our Products
             </p>
@@ -577,7 +626,7 @@
             <a href="highTensile.html" class="footer-link-products">
               High Tensile Fasteners
             </a>
-          </div>
+          </div> -->
         </div>
         <div class="col-md-4 col-sm-6 animate" id="foot-nav">
           <p id="foot-nav-head">Navigation</p>

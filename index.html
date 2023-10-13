@@ -29,7 +29,7 @@
                 </a>
             </div>
             <ul>
-              <li>
+              <li onclick="location.href='index.html'">
                 <a href="index.html" class="main-menu-element">HOME</a>
               </li>
               <li>
@@ -37,19 +37,23 @@
                 <div class="sub-menu-1">
                   <ul>
                     <li onclick="location.href='metallic.html'">
+                      <img src="CAssets/metallicIcon.png" class="nav-icon">
                         <a href="metallic.html">Metallic Gaskets</a>
                     </li>
                     <li onclick="location.href='semiMetallic.html'">
+                      <img src="CAssets/semi-metallicIcon.png" class="nav-icon">
                       <a href="semiMetallic.html">
                         Semi Metallic Gaskets
                       </a>
                     </li>
                     <li onclick="location.href='nonMetallicGaskets.html'">
+                      <img src="CAssets/Non-metallicIcon.png" class="nav-icon">
                       <a href="nonMetallicGaskets.html">
                         Non Metallic Gaskets
                       </a>
                     </li>
                     <li onclick="location.href='highTensile.html'">
+                      <img src="CAssets/highTensileIcon.png" class="nav-icon">
                       <a href="highTensile.html">
                         High Tensile Fasteners
                       </a>
@@ -61,22 +65,22 @@
                 <a href="about.html" class="main-menu-element">ABOUT</a>
                 <div class="sub-menu-1">
                     <ul>
-                        <li onclick="location.href='about.html#about-text'">
+                        <li onclick="location.href='about.html#about-text'" style="padding: 20px 0;">
                             <a href="about.html#about-text">
                                 About Us
                             </a>
                         </li>
-                        <li onclick="location.href='about.html#about-text'">
+                        <li onclick="location.href='about.html#about-text'" style="padding: 20px 0;">
                             <a href="about.html#about-text">
                                 Who we are
                             </a>
                         </li>
-                        <li onclick="location.href='about.html#qa-v2'">
+                        <li onclick="location.href='about.html#qa-v2'" style="padding: 20px 0;">
                             <a href="about.html#qa-v2">
                                 Our Values
                             </a>
                         </li>
-                        <li onclick="location.href='about.html#strengths'">
+                        <li onclick="location.href='about.html#strengths'" style="padding: 20px 0;">
                             <a href="about.html#strengths">
                                 Our Strengths
                             </a>
@@ -84,7 +88,7 @@
                     </ul>
                 </div>
               </li>
-              <li>
+              <li onclick="location.href='contact.html'">
                 <a href="contact.html" id="contact-btn-nav">CONTACT</a>
               </li>
             </ul>
@@ -133,6 +137,7 @@
             </div>
           </nav>
         <div id="hero-img-div">
+          <video src="CAssets/bgVideo.mp4" loop autoplay></video>
             <div id="lading-page-text">
               <p id="landing-text-main">
                 Simplified <br /><span>Industry needs</span>
@@ -393,128 +398,129 @@
       </section>
 
       <!-- footer section -->
-    <section id="footer">
+      <section id="footer">
 
-      <div class="touch">
-        <p class="touch-head">
-          Get in Touch
+        <div class="touch">
+          <p class="touch-head">
+            Get in Touch
+          </p>
+          <form action="/" method="post" id="touch-form">
+            <input type="text" name="name" id="touch-name" placeholder="Enter your name">
+            <input type="tel" name="mobile" id="touch-mail" placeholder="Enter your mobile or email">
+            <input type="text" name="company" id="touch-company-name" placeholder="Enter your Comany name">
+            <button type="submit" id="touch-submit"><ion-icon name="send-outline"></ion-icon></button>
+          </form>
+          <div id="socials" style="text-align: center;margin: 3% 0 2%;">
+            <a href="https://www.linkedin.com/in/tyco-sealing-products-4b4b6a289/" class="social-icon">
+              <img src="CAssets/linkedin.png" class="social-icon-img">
+            </a>
+            <a href="https://www.instagram.com/tycosealingindia/" class="social-icon">
+              <img src="CAssets/instagram.png" class="social-icon-img">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="CAssets/facebook.png" class="social-icon-img">
+            </a>
+            <a href="#" class="social-icon">
+              <img src="CAssets/twitter.png" class="social-icon-img">
+            </a>
+          </div>
+        </div>
+        <hr style="padding:2% 0;" />
+        <div class="row" id="footer-row">
+          
+          <div class="col-md-4 col-sm-6 animate" style="margin-bottom: 4%">
+            <img src="CAssets/tycoLogoWhite.png" id="footer-logo" />
+            <div id="mail">
+              <ion-icon name="mail-outline" class="foot-icon"></ion-icon>
+              info@tycosealing.com
+            </div>
+            <div id="mail">
+              <ion-icon name="call-outline" class="foot-icon"></ion-icon>
+              +91 XXX-XX-XXXXX
+            </div> 
+            <!-- <div id="footer-products-links-div">
+              <p class="prd-footer-head">
+                Our Products
+              </p>
+              <a href="metallic.html" class="footer-link-products">
+                RTJ Gaskets
+              </a>
+              <a href="vxAx.html" class="footer-link-products">
+                VX-AX Gaskets
+              </a>
+              <a href="ixgaskets.html" class="footer-link-products">
+                IX Gaskets
+              </a>
+              <a href="spiralWound.html" class="footer-link-products">
+                Spiral Wound Gaskets
+              </a>
+              <a href="MetalJacketed.html" class="footer-link-products">
+                 Metal Jacketed Gaskets
+              </a>
+              <a href="kammprofile.html" class="footer-link-products">
+                Kammprofile Gaskets
+              </a>
+              <a href="rubberGaskets.html" class="footer-link-products">
+                Rubber Gaskets
+              </a>
+              <a href="ptfe.html" class="footer-link-products">
+                PTFE Gaskets
+              </a>
+              <a href="nonAsbestos.html" class="footer-link-products">
+                Non-Asbestos Gaskets
+              </a>
+              <a href="highTensile.html" class="footer-link-products">
+                High Tensile Fasteners
+              </a>
+            </div> -->
+          </div>
+          <div class="col-md-4 col-sm-6 animate" id="foot-nav">
+            <p id="foot-nav-head">Navigation</p>
+            <ul id="foot-nav-list">
+              <li>
+                <a href="index.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="metallic.html">
+                  Metallic Gaskets
+                  <ion-icon name="caret-forward-outline"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="semiMetallic.html">
+                  Semi-Metallic Gaskets
+                  <ion-icon name="caret-forward-outline"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="nonMetallicGaskets.html">
+                  Non-Metallic Gaskets
+                  <ion-icon name="caret-forward-outline"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="about.html"> About </a>
+              </li>
+              <li>
+                <a href="contact.html"> Contact </a>
+              </li>
+            </ul>
+            
+          </div>
+  
+          <div class="col-md-4" style="padding: 4% 2%;" id="right-most">
+            <a href="CAssets/favicon.ico" download>
+              <i class="fa-solid fa-download"></i> Download Brochure
+            </a>
+          </div>
+        </div>
+        <img src="CAssets/tycologoWheel.png" id="water-mark-footer">
+        <p id="copyright">
+          Copyright © 2023 Tyco Sealing Pvt. Ltd. All Rights Reserved
         </p>
-        <form action="/" method="post" id="touch-form">
-          <input type="text" name="name" id="touch-name" placeholder="Enter your name">
-          <input type="tel" name="mobile" id="touch-mail" placeholder="Enter your mobile or email">
-          <input type="text" name="company" id="touch-company-name" placeholder="Enter your Comany name">
-
-          <button type="submit" id="touch-submit">Submit</button>
-        </form>
-        <div id="socials" style="text-align: center;margin: 3% 0 2%;">
-          <a href="https://www.linkedin.com/in/tyco-sealing-products-4b4b6a289/" class="social-icon">
-            <img src="CAssets/linkedin.png" class="social-icon-img">
-          </a>
-          <a href="https://www.instagram.com/tycosealingindia/" class="social-icon">
-            <img src="CAssets/instagram.png" class="social-icon-img">
-          </a>
-          <a href="#" class="social-icon">
-            <img src="CAssets/facebook.png" class="social-icon-img">
-          </a>
-          <a href="#" class="social-icon">
-            <img src="CAssets/twitter.png" class="social-icon-img">
-          </a>
-        </div>
-      </div>
-      <hr style="padding:2% 0;" />
-      <div class="row" id="footer-row">
-        
-        <div class="col-md-4 col-sm-6 animate" style="margin-bottom: 4%">
-          <img src="CAssets/tycoLogoWhite.png" id="footer-logo" />
-          <div id="mail">
-            <ion-icon name="mail-outline" class="foot-icon"></ion-icon>
-            info@tycosealing.com
-          </div>
-          <div id="mail">
-            <ion-icon name="call-outline" class="foot-icon"></ion-icon>
-            +91 XXX-XX-XXXXX
-          </div> 
-          <div id="footer-products-links-div">
-            <p class="prd-footer-head">
-              Our Products
-            </p>
-            <a href="metallic.html" class="footer-link-products">
-              RTJ Gaskets
-            </a>
-            <a href="vxAx.html" class="footer-link-products">
-              VX-AX Gaskets
-            </a>
-            <a href="ixgaskets.html" class="footer-link-products">
-              IX Gaskets
-            </a>
-            <a href="spiralWound.html" class="footer-link-products">
-              Spiral Wound Gaskets
-            </a>
-            <a href="MetalJacketed.html" class="footer-link-products">
-               Metal Jacketed Gaskets
-            </a>
-            <a href="kammprofile.html" class="footer-link-products">
-              Kammprofile Gaskets
-            </a>
-            <a href="rubberGaskets.html" class="footer-link-products">
-              Rubber Gaskets
-            </a>
-            <a href="ptfe.html" class="footer-link-products">
-              PTFE Gaskets
-            </a>
-            <a href="nonAsbestos.html" class="footer-link-products">
-              Non-Asbestos Gaskets
-            </a>
-            <a href="highTensile.html" class="footer-link-products">
-              High Tensile Fasteners
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 animate" id="foot-nav">
-          <p id="foot-nav-head">Navigation</p>
-          <ul id="foot-nav-list">
-            <li>
-              <a href="index.html">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="metallic.html">
-                Metallic Gaskets
-                <ion-icon name="caret-forward-outline"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="semiMetallic.html">
-                Semi-Metallic Gaskets
-                <ion-icon name="caret-forward-outline"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="nonMetallicGaskets.html">
-                Non-Metallic Gaskets
-                <ion-icon name="caret-forward-outline"></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a href="about.html"> About </a>
-            </li>
-            <li>
-              <a href="contact.html"> Contact </a>
-            </li>
-          </ul>     
-        </div>
-        <div class="col-md-4" style="padding: 4% 2%;" id="right-most">
-          <a href="CAssets/favicon.ico" download>
-            <i class="fa-solid fa-download"></i> Download Brochure
-          </a>
-        </div>
-      </div>
-      <img src="CAssets/tycologoWheel.png" id="water-mark-footer">
-      <p id="copyright">
-        Copyright © 2023 Tyco Sealing Pvt. Ltd. All Rights Reserved
-      </p>
-    </section>
+      </section>
 
     <script src="index.js"></script>
       <!-- JS section -->
