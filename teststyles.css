@@ -1230,9 +1230,11 @@ section#prd-v2-section .animate-right {
   transition: 1s;
 }
 p.touch-head {
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 600;
   color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 3%;
 }
 .touch form {
   width: 100%;
@@ -1272,7 +1274,7 @@ p.touch-head {
   border: 1px solid #f0f0f0;
   background-color: transparent;
   color: #2a2a2a;
-  padding: 15px 20px;
+  padding: 13px 18px;
   background-color: #f0f0f0;
   /* margin: 0 3%; */
   font-size: 18px;
@@ -1288,17 +1290,13 @@ p.touch-head {
   }
 }
 #touch-form input:first-child {
-  /* border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%; */
-  /* padding: 1% 2%; */
-  padding: 15px 20px;
+  padding: 13px 18px;
   border-radius: 50px 0 0 50px;
   border-right: 1px solid #2a2a2a;
 }
 #touch-mail {
   border-right: 1px solid #2a2a2a !important;
-  padding: 9px 20px !important;
-  padding: 15px 20px !important;
+  padding: 13px 18px !important;
 }
 #touch-company-name {
   padding: 15px 20px;

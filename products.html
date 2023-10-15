@@ -64,22 +64,26 @@
             <a href="about.html" class="main-menu-element">ABOUT</a>
             <div class="sub-menu-1">
                 <ul>
-                    <li onclick="location.href='about.html#about-text'" style="padding: 20px 0;">
+                    <li onclick="location.href='about.html#about-text'">
+                      <img src="CAssets/aboutUsIcon.png" class="nav-icon">
                         <a href="about.html#about-text">
                             About Us
                         </a>
                     </li>
-                    <li onclick="location.href='about.html#about-text'" style="padding: 20px 0;">
+                    <li onclick="location.href='about.html#about-text'">
+                      <img src="CAssets/whoweareIcon.png" class="nav-icon">
                         <a href="about.html#about-text">
                             Who we are
                         </a>
                     </li>
-                    <li onclick="location.href='about.html#qa-v2'" style="padding: 20px 0;">
+                    <li onclick="location.href='about.html#qa-v2'">
+                      <img src="CAssets/valuesIcon.png" class="nav-icon">
                         <a href="about.html#qa-v2">
                             Our Values
                         </a>
                     </li>
-                    <li onclick="location.href='about.html#strengths'" style="padding: 20px 0;">
+                    <li onclick="location.href='about.html#strengths'">
+                      <img src="CAssets/strengthsIcon.png" class="nav-icon">
                         <a href="about.html#strengths">
                             Our Strengths
                         </a>
@@ -152,8 +156,51 @@
       </div>
     </section>
 
+    <section id="products-categories">
+      <p id="categories-head" class="animate">Our Categories</p>
+      <div class="row" style="margin: 0 0 2% 0">
+        <div class="col-md-6 col-sm-6 product-div animate-left" style="--i:0">
+          <div class="category-box" onclick="location.href='metallic.html'">
+            <img src="CAssets/Metallic.jpg" loading="lazy" class="category-img" />
+            <p class="category-name animate">
+              Metallic Gaskets <ion-icon name="arrow-forward-outline"></ion-icon>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6  product-div animate-center" style="--i:0">
+          <div class="category-box" onclick="location.href='semiMetallic.html'">
+            <img src="CAssets/semi-metallic.jpg" loading="lazy" class="category-img" />
+            <p class="category-name">
+              Semi-Metallic Gaskets  <ion-icon name="arrow-forward-outline"></ion-icon>
+            </p> 
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6  product-div animate-right" style="--i:0">
+          <div
+            class="category-box"
+            onclick="location.href='nonMetallicGaskets.html'"
+          >
+            <img src="CAssets/Non-metallic 02.jpg" loading="lazy" class="category-img" />
+            <p class="category-name">
+              Non-Metallic Gaskets  <ion-icon name="arrow-forward-outline"></ion-icon>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 product-div animate-right" style="--i:0">
+          <div
+            class="category-box"
+            onclick="location.href='highTensile.html'"
+          >
+            <img src="CAssets/highTensile.jpg" loading="lazy" class="category-img" />
+            <p class="category-name">
+              High Tensile Fasteners  <ion-icon name="arrow-forward-outline"></ion-icon>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section id="prd-v2-section">
+    <!-- <section id="prd-v2-section">
       <div class="prd-v2 row">
         <div class="col-md-6 animate-left" style="text-align: center;">
           <img src="CAssets/RTJ .jpg" class="prd-v2-img">
@@ -284,11 +331,10 @@
           <img src="CAssets/highTensile.jpg" class="prd-v2-img">
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- footer section -->
     <section id="footer">
-
       <div class="touch">
         <p class="touch-head">
           Get in Touch
