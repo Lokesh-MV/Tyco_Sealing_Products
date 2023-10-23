@@ -39,10 +39,10 @@
           </a>
       </div>
       <ul>
-        <li>
+        <li onclick="location.href='index.html'">
           <a href="index.html" class="main-menu-element">HOME</a>
         </li>
-        <li>
+        <li onclick="location.href='products.html'">
           <a href="products.html" class="main-menu-element">PRODUCTS</a>
           <div class="sub-menu-1">
             <ul>
@@ -65,7 +65,7 @@
             </ul>      
           </div>
         </li>
-        <li>
+        <li onclick="location.href='about.html'">
           <a href="about.html" class="main-menu-element">ABOUT</a>
           <div class="sub-menu-1">
               <ul>
@@ -151,9 +151,9 @@
         <p id="contact-landing-text">
           Our commitment to your satisfaction
         </p>
-        <div id="whats-app-div" onclick="location.href='https://api.whatsapp.com/send?phone=7799411997'">
+        <div id="whats-app-div" onclick="location.href='https://api.whatsapp.com/send?phone=9059323369'">
           <img src="CAssets/whatsapp.png" id="whats-app-icon">
-          <span>Tyco Industries</span>
+          <span>Tyco Sealing Products</span>
         </div>
       </div>
     </div>
@@ -293,7 +293,7 @@
             </div>
             <div id="mail">
               <ion-icon name="call-outline" class="foot-icon"></ion-icon>
-              +91 XXX-XX-XXXXX
+              +91 90593 23369
             </div> 
             <!-- <div id="footer-products-links-div">
               <p class="prd-footer-head">
@@ -332,7 +332,8 @@
             </div> -->
           </div>
           <div class="col-md-4 col-sm-6 animate" id="foot-nav">
-            <p id="foot-nav-head">Navigation</p>
+            <p id="foot-nav-head" style="margin-bottom: 0;">Navigation</p>
+            <img src="CAssets/lineExt.png" class="line">
             <ul id="foot-nav-list">
               <li>
                 <a href="index.html">
@@ -396,23 +397,5 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
-
-    <script>
-      function sendEmail() {
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "lokeshmv65@gmail.com",
-    Password : "4C002D2B0A43FFD6EA2DF4863A9E946C5410",
-    To : 'venkatalokesh789@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New From the contact query",
-    Body : "And this is the body"
-    }).then(
-    message => alert(message)
-    );
-      }
-    </script>
   </body>
 </html>
