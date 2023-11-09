@@ -1429,3 +1429,6 @@ table#spiral-table {
 .line {
   display: block;
 }
+a#whats-app-div {
+  text-decoration: none;
+}
