@@ -1432,3 +1432,22 @@ table#spiral-table {
 a#whats-app-div {
   text-decoration: none;
 }
+div#footer-brutanix {
+  background-color: #fff;
+  text-align: center;
+  padding: 1.5% 0;
+  position: relative;
+  z-index: 999999999999;
+}
+div#footer-brutanix p {
+  margin-bottom: 0;
+  z-index: 999999999999;
+}
+div#footer-brutanix p a {
+  color: #3772ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+div#footer-brutanix p a:hover {
+  color: #7209b7;
+}
