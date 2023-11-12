@@ -102,50 +102,91 @@
               </li>
             </ul>
             </a>
-          </nav>
+            <a class="btn btn-primary" id="small-toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+      </nav>
 
           <!-- Medium Devices Nav bar -->
-          <nav class="navbar navbar-expand-lg bg-none" id="med-navBar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="test.html">
-                <img src="CAssets/tyco logo blue.png" id="med-nav-logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+          <div class="small-nav">
+            <div class="lg-bars">
+              <img src="CAssets/tyco logo blue.png" id="logo-small-nav">
+              <button type="button" id="hamburger-button">
+                <i class="fa-solid fa-bars" onclick="menu_display()"></i>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="test">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
-                      Products
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="metallic.html">RTJ Gaskets</a></li>
-                      <li><a class="dropdown-item" href="vxAx.html">VX-AX Gaskets</a></li>
-                      <li><a class="dropdown-item" href="ixgaskets.html">IX Gaskets</a></li>
-                      <li><a class="dropdown-item" href="spiralWound.html">Spiral Wound Gaskest</a></li>
-                      <li><a class="dropdown-item" href="kammprofile.html">Kammprofile Gaskets</a></li>
-                      <li><a class="dropdown-item" href="MetalJacketed.html">Metal-Jacketed Gaskets</a></li>
-                      <li><a class="dropdown-item" href="nonMetallicGaskets.html">Non-Metallic Gaskets</a></li>
-                      <li><a class="dropdown-item" href="highTensile.html">High-Tensile Fasteners</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </nav>
+          </div>
+          <div id="nav-div" class="row">
+            <div class="socials-row-nav">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="small-nav-menu-list">
+              <ul>
+                <li>
+                  <a href="index.html">HOME</a>
+                </li>
+                <li>
+                  <p id="prd-small-main-element" onclick="prd_sub_menu_show()">PRODUCTS <i class="fa-solid fa-caret-down"></i></p>
+                  <div id="small-nav-sub-menu-prd">
+                    <ul>
+                      <li>
+                        <img src="CAssets/metallicIcon.png" class="small-nav-icon">
+                        <a href="metallic.html">Metallic Gaskets</a>
+                      </li>
+                      <li>
+                        <img src="CAssets/semi-metallicIcon.png" class="small-nav-icon">
+                        <a href="semiMetallic.html">Semi Metallic Gaskets</a>
+                      </li>
+                      <li>
+                        <img src="CAssets/Non-metallicIcon.png" class="small-nav-icon">
+                        <a href="nonMetallicGaskets.html">Non Metallic Gaskets</a>
+                      </li>
+                      <li>
+                        <img src="CAssets/highTensileIcon.png" class="small-nav-icon">
+                        <a href="highTensile.html">High Tensile Fasteners</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li id="abt-small-main-element" onclick="abt_sub_menu_show()">
+                  <p >ABOUT <i class="fa-solid fa-caret-down"></i></p>
+                  <div id="small-nav-sub-menu-abt">
+                    <ul>
+                      <li onclick="location.href='about.html#about-text'">
+                        <img src="CAssets/aboutUsIcon.png" class="small-nav-icon">
+                        <a href="about.html#about-text">ABOUT US</a>
+                      </li>
+                      <li onclick="location.href='about.html#about-text'">
+                        <img src="CAssets/whoweareIcon.png" class="small-nav-icon">
+                        <a href="about.html#about-text">WHO WE ARE</a>
+                      </li>
+                      <li onclick="location.href='about.html#qa-v2'">
+                        <img src="CAssets/valuesIcon.png" class="small-nav-icon">
+                        <a href="about.html#qa-v2">OUR VALUES</a>
+                      </li>
+                      <li onclick="location.href='about.html#strengths'">
+                        <img src="CAssets/strengthsIcon.png" class="small-nav-icon">
+                        <a href="about.html#strengths">OUR STRENGTHS</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li onclick="location.href='contact.html'" id="small-nav-contact-element">
+                  <a href="contact.html" id="small-nav-contact-btn">CONTACT</a>
+                </li>
+              </ul>
+
+              <p id="nav-mail"><i class="fa-solid fa-envelope"></i> info@tycosealing.com</p>
+            </div>
+          </div>
+
+
         <div id="hero-img-div">
+         
           <video src="CAssets/bgVideo.mp4" loop autoplay></video>
             <div id="lading-page-text">
               <p id="landing-text-main">
@@ -169,7 +210,7 @@
       <img src="CAssets/whatsapp.png" loading="lazy" id="whats-app-icon">
       <span>Tyco Sealing Products</span>
     </a>
-
+    
     <!-- products category section -->
     <section id="products-categories">
         <p id="categories-head" class="animate">Our Categories</p>
@@ -500,11 +541,10 @@
         <p id="copyright">
           Copyright © 2023 Tyco Sealing Pvt. Ltd. All Rights Reserved
         </p>
-        
       </section>
       <div id="footer-brutanix">
         <p id="brutanix-text">
-          Designed and Developed by <a href="brutanix.com" target="_blank">Brutanix Design & Development Studios</a>
+          Designed and Developed by <a href="https://www.brutanix.com" target="_blank">BRUTANIX Design & Development Studios</a>
         </p>
       </div>
 

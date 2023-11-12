@@ -64,4 +64,34 @@ document.addEventListener("DOMContentLoaded", function(){
         }, 10)
       });
 
+let menu_bars = document.getElementById("hamburger-button");
+let nav_div = document.getElementById("nav-div");
+function menu_display() {
+    if (nav_div.style.display == "block"){
+        nav_div.style.display = "none";
+    } else{
+        nav_div.style.display = "block";
+    }
+}
 
+let abt_main = document.getElementById("abt-small-main-element"); 
+let abt_sub_menu = document.getElementById("small-nav-sub-menu-abt");
+
+function abt_sub_menu_show(){
+    if(abt_sub_menu.style.display == "none"){
+        abt_sub_menu.style.display = "block";
+    } else{
+        abt_sub_menu.style.display = "none";
+    }
+}
+
+let prd_main = document.getElementById("prd-small-main-element");
+let prd_sub_menu = document.getElementById("small-nav-sub-menu-prd");
+
+function prd_sub_menu_show(){
+    if (prd_sub_menu.style.display == "none"){
+        prd_sub_menu.style.display = "block";
+    } else{
+        prd_sub_menu.style.display = "none";
+    }
+}
