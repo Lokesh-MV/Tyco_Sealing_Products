@@ -91,6 +91,7 @@ let prd_sub_menu = document.getElementById("small-nav-sub-menu-prd");
 function prd_sub_menu_show(){
     if (prd_sub_menu.style.display == "none"){
         prd_sub_menu.style.display = "block";
+
     } else{
         prd_sub_menu.style.display = "none";
     }
