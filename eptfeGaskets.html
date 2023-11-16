@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="teststyles.css" />
   </head>
   <body>
-    <!-- Individual products landing section -->
      <!-- Individual products landing section -->
      <section id="landing-products-individual">
       <!-- navbar section -->
@@ -103,80 +102,85 @@
         </a>
       </nav>
 
-      <div class="small-nav">
-        <div class="lg-bars">
-          <img src="CAssets/tyco logo blue.png" id="logo-small-nav">
+      <!-- Medium Devices Nav bar -->
+
+    <div class="small-nav" style="background-color: transparent;">
+      <div class="lg-bars">
+        <img src="CAssets/tycoLogoWhite.png" id="logo-small-nav">
+        <div class="rem-small">
+          <a href="contact.html" id="small-nav-contact-btn" class="contact-btn-out">CONTACT</a>
           <button type="button" id="hamburger-button">
-            <i class="fa-solid fa-bars" onclick="menu_display()"></i>
+            <i class="fa-solid fa-bars" onclick="menu_display()" style="color: #fff;"></i>
           </button>
         </div>
       </div>
-      <div id="nav-div" class="row">
-        <div class="socials-row-nav">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </div>
-        <div class="small-nav-menu-list">
-          <ul>
-            <li>
-              <a href="index.html">HOME</a>
-            </li>
-            <li>
-              <p id="prd-small-main-element" onclick="prd_sub_menu_show()">PRODUCTS <i class="fa-solid fa-caret-down"></i></p>
-              <div id="small-nav-sub-menu-prd">
-                <ul>
-                  <li>
-                    <img src="CAssets/metallicIcon.png" class="small-nav-icon">
-                    <a href="metallic.html">Metallic Gaskets</a>
-                  </li>
-                  <li>
-                    <img src="CAssets/semi-metallicIcon.png" class="small-nav-icon">
-                    <a href="semiMetallic.html">Semi Metallic Gaskets</a>
-                  </li>
-                  <li>
-                    <img src="CAssets/Non-metallicIcon.png" class="small-nav-icon">
-                    <a href="nonMetallicGaskets.html">Non Metallic Gaskets</a>
-                  </li>
-                  <li>
-                    <img src="CAssets/highTensileIcon.png" class="small-nav-icon">
-                    <a href="highTensile.html">High Tensile Fasteners</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li id="abt-small-main-element" onclick="abt_sub_menu_show()">
-              <p >ABOUT <i class="fa-solid fa-caret-down"></i></p>
-              <div id="small-nav-sub-menu-abt">
-                <ul>
-                  <li onclick="location.href='about.html#about-text'">
-                    <img src="CAssets/aboutUsIcon.png" class="small-nav-icon">
-                    <a href="about.html#about-text">ABOUT US</a>
-                  </li>
-                  <li onclick="location.href='about.html#about-text'">
-                    <img src="CAssets/whoweareIcon.png" class="small-nav-icon">
-                    <a href="about.html#about-text">WHO WE ARE</a>
-                  </li>
-                  <li onclick="location.href='about.html#qa-v2'">
-                    <img src="CAssets/valuesIcon.png" class="small-nav-icon">
-                    <a href="about.html#qa-v2">OUR VALUES</a>
-                  </li>
-                  <li onclick="location.href='about.html#strengths'">
-                    <img src="CAssets/strengthsIcon.png" class="small-nav-icon">
-                    <a href="about.html#strengths">OUR STRENGTHS</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li onclick="location.href='contact.html'" id="small-nav-contact-element">
-              <a href="contact.html" id="small-nav-contact-btn">CONTACT</a>
-            </li>
-          </ul>
-  
-          <p id="nav-mail"><i class="fa-solid fa-envelope"></i> info@tycosealing.com</p>
-        </div>
+    </div>
+    <div id="nav-div" class="row">
+      <div class="socials-row-nav">
+        <a href="https://www.instagram.com/tycosealingindia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/tyco-sealing-products-4b4b6a289/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61550356303146" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
       </div>
+      <div class="small-nav-menu-list">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <p id="prd-small-main-element" onclick="prd_sub_menu_show()">PRODUCTS <i class="fa-solid fa-caret-down"></i></p>
+            <div id="small-nav-sub-menu-prd">
+              <ul>
+                <li>
+                  <img src="CAssets/metallicIcon.png" class="small-nav-icon">
+                  <a href="metallic.html">Metallic Gaskets</a>
+                </li>
+                <li>
+                  <img src="CAssets/semi-metallicIcon.png" class="small-nav-icon">
+                  <a href="semiMetallic.html">Semi Metallic Gaskets</a>
+                </li>
+                <li>
+                  <img src="CAssets/Non-metallicIcon.png" class="small-nav-icon">
+                  <a href="nonMetallicGaskets.html">Non Metallic Gaskets</a>
+                </li>
+                <li>
+                  <img src="CAssets/highTensileIcon.png" class="small-nav-icon">
+                  <a href="highTensile.html">High Tensile Fasteners</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="abt-small-main-element" onclick="abt_sub_menu_show()">
+            <p >ABOUT <i class="fa-solid fa-caret-down"></i></p>
+            <div id="small-nav-sub-menu-abt">
+              <ul>
+                <li onclick="location.href='about.html#about-text'">
+                  <img src="CAssets/aboutUsIcon.png" class="small-nav-icon">
+                  <a href="about.html#about-text">ABOUT US</a>
+                </li>
+                <li onclick="location.href='about.html#about-text'">
+                  <img src="CAssets/whoweareIcon.png" class="small-nav-icon">
+                  <a href="about.html#about-text">WHO WE ARE</a>
+                </li>
+                <li onclick="location.href='about.html#qa-v2'">
+                  <img src="CAssets/valuesIcon.png" class="small-nav-icon">
+                  <a href="about.html#qa-v2">OUR VALUES</a>
+                </li>
+                <li onclick="location.href='about.html#strengths'">
+                  <img src="CAssets/strengthsIcon.png" class="small-nav-icon">
+                  <a href="about.html#strengths">OUR STRENGTHS</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li onclick="location.href='contact.html'" id="small-nav-contact-element">
+            <a href="contact.html" id="small-nav-contact-btn">CONTACT</a>
+          </li>
+        </ul>
+
+        <p id="nav-mail"><i class="fa-solid fa-envelope"></i> info@tycosealing.com</p>
+      </div>
+    </div>
       <p id="products-section-head-individual">Our Products</p>
       <p id="products-text-individual">
         Explore our comprehensive selection of top-tier industrial gaskets

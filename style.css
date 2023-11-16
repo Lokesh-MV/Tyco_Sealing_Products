@@ -1017,15 +1017,8 @@ section#about-text {
   align-items: center;
   justify-content: center;
   margin-top: 2%;
-  /* visibility: hidden; */
   margin-bottom: 0;
 }
-/* .prd-box:hover{
-    cursor: pointer;
-    .product-name-particular{
-        visibility: visible;
-    }
-} */
 @media only screen and (max-width: 700px) {
   #products-text,
   #products-text-individual {
@@ -1165,9 +1158,6 @@ section#rtj-gaskets {
   }
   #RTJ-types-head {
     font-size: 18px;
-  }
-  #RTJ-text-para-3 {
-    display: none;
   }
   #Rtj {
     flex-direction: column;
@@ -1320,10 +1310,7 @@ p.sm-gkts-head {
     width: 50%;
   }
 }
-/* contact section styles secion */
-/* #contact-landing{
-    padding-top: 12vh;
-} */
+
 @media only screen and (max-width: 650px) {
   #contact-landing {
     padding-top: 0;
