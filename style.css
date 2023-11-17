@@ -1051,6 +1051,9 @@ section#about-text {
     font-size: 32px;
     left: 8%;
   }
+  #products-section-head-individual {
+    margin-bottom: 0;
+  }
 }
 /* Metallic or RTJ Gaskets styling section */
 #landing-mtl-gkts nav {
@@ -1525,4 +1528,15 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+#nav-contact-msg {
+  color: #6c757d;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  font-size: 16px;
+  padding: 0 6px;
+}
+#nav-contact-msg span {
+  color: #264b8a;
 }

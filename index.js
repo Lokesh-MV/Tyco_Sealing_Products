@@ -80,6 +80,7 @@ let abt_sub_menu = document.getElementById("small-nav-sub-menu-abt");
 function abt_sub_menu_show(){
     if(abt_sub_menu.style.display == "none"){
         abt_sub_menu.style.display = "block";
+        prd_sub_menu.style.display = "none";
     } else{
         abt_sub_menu.style.display = "none";
     }
@@ -91,6 +92,7 @@ let prd_sub_menu = document.getElementById("small-nav-sub-menu-prd");
 function prd_sub_menu_show(){
     if (prd_sub_menu.style.display == "none"){
         prd_sub_menu.style.display = "block";
+        abt_sub_menu.style.display = "none";
 
     } else{
         prd_sub_menu.style.display = "none";
