@@ -1043,8 +1043,9 @@ section#about-text {
   }
   #products-text-individual {
     font-size: 18px;
-    left: 8%;
-    top: 46%;
+    left: 0;
+    padding: 0 8px;
+    top: 40%;
   }
   #products-section-head,
   #products-section-head-individual {
