@@ -217,7 +217,7 @@
               <p id="contact-form-head">
                 ENQUIRY FORM
               </p>
-              <form action="/contact" method="post" onsubmit="sendEmail(); reset(); return false">
+              <form action="">
                 <label for="username">Enter your name <span>*</span></label>
                 <input
                   type="text"
@@ -229,19 +229,18 @@
                   >Enter your mobile number <span>*</span></label
                 >
                 <input
-                  type="tel"
+                  type="text"
                   id="mobile"
                   name="mobileNo"
                   placeholder="XXXXXX2891"
                   required
                 />
-                <label for="email">Enter your email <span>*</span></label>
+                <label for="email">Enter your email<span>*</span></label>
                 <input
                   name="EMAIL"
-                  type="email"
+                  type="text"
                   id="email"
                   placeholder="example@gmail.com"
-                  required
                 />
                 <label for="selectCity">Type of Enquiry<span>*</span></label>
                 <select id="selectCity" name="typeContact">
@@ -253,49 +252,19 @@
                 <label for="msg">Enter your message</label>
                 <textarea
                   name="msg"
-                  id=""
+                  id="msg"
                   cols="30"
-                  rows="3"
+                  rows="7"
                   placeholder="Your message goes here"
                 ></textarea>
                 <button
-                  type="submit"
-                  data-bs-toggle="modal"
-                  data-bs-target="#contactModal"
+                  type="button"
                   id="submit"
+                  onclick="contact()"
                 >
                   Send &nbsp; <ion-icon name="send-outline"></ion-icon>
                 </button>
               </form>
-            </div>
-          </div>
-          <!-- Contact Modal code  -->
-          <div class="modal fade" id="contactModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <img src="CAssets/tyco logo blue.png" loading="lazy" id="modal-contact-logo" />
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <p class="modal-text">
-                    We've got you covered, and we'll be in touch shortly to improve your experience. While you wait, feel free to explore our extensive selection of products
-                  </p>
-                </div>
-                <div class="modal-footer">
-                  <a href="index.html" type="button" class="btn btn-secondary">
-                    Home <i class="fa-solid fa-house"></i>
-                  </a>
-                  <a href="products.html" type="button" class="btn btn-primary"
-                    >Products</a
-                  >
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -308,12 +277,36 @@
           <p class="touch-head">
             Get in Touch
           </p>
-          <form action="/" method="post" id="touch-form">
+          <form id="touch-form">
             <input type="text" name="name" id="touch-name" placeholder="Enter your name">
-            <input type="tel" name="mobile" id="touch-mail" placeholder="Enter your mobile or email">
+            <input type="text" name="mobile" id="touch-mail" placeholder="Enter your mobile or email">
             <input type="text" name="company" id="touch-company-name" placeholder="Enter your Comany name">
-            <button type="submit" id="touch-submit"><ion-icon name="send-outline"></ion-icon></button>
+            <button type="button" id="touch-submit" onclick="newsletter()" data-bs-toggle="modal" data-bs-target="#newsletterpopup"><ion-icon name="send-outline"></ion-icon></button>
           </form>
+
+          <!-- Modal -->
+<div class="modal fade" id="newsletterpopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="newsletter_head" id="staticBackdropLabel">Newsletter Subscribed</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-body-text">
+          Welcome aboard! You're now part of our community. Get ready for exciting updates!
+        </p>
+        <p class="modal-body-text">
+          Continue your journey with us, Checkout our wide range of Products!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" onclick="location.href='products.html'" class="btn btn-primary">Products</button>
+      </div>
+    </div>
+  </div>
+</div>
           <div id="socials" style="text-align: center;margin: 3% 0 2%;">
             <a href="https://www.linkedin.com/in/tyco-sealing-products-4b4b6a289/" class="social-icon" target="_blank">
               <img src="CAssets/linkedin.png" loading="lazy" class="social-icon-img">
@@ -398,12 +391,15 @@
         </p>
       </div> -->
     <!-- JS Section -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="index.js"></script>
     <!-- Ionicons JS -->
     <script

@@ -463,12 +463,37 @@
           <p class="touch-head">
             Get in Touch
           </p>
-          <form action="/" method="post" id="touch-form">
+          <form id="touch-form">
             <input type="text" name="name" id="touch-name" placeholder="Enter your name">
             <input type="text" name="mobile" id="touch-mail" placeholder="Enter your mobile or email">
             <input type="text" name="company" id="touch-company-name" placeholder="Enter your Comany name">
-            <button type="submit" id="touch-submit" ><ion-icon name="send-outline"></ion-icon></button>
+            <button type="button" id="touch-submit" onclick="newsletter()" data-bs-toggle="modal" data-bs-target="#newsletterpopup"><ion-icon name="send-outline"></ion-icon></button>
           </form>
+
+          <!-- Modal -->
+<div class="modal fade" id="newsletterpopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="newsletter_head" id="staticBackdropLabel">Newsletter Subscribed</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-body-text">
+          Welcome aboard! You're now part of our community. Get ready for exciting updates!
+        </p>
+        <p class="modal-body-text">
+          Continue your journey with us, Checkout our wide range of Products!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" onclick="location.href='products.html'" class="btn btn-primary">Products</button>
+      </div>
+    </div>
+  </div>
+</div>
+
           <div id="socials" style="text-align: center;margin: 3% 0 2%;">
             <a href="https://www.linkedin.com/in/tyco-sealing-products-4b4b6a289/" class="social-icon" target="_blank">
               <img src="CAssets/linkedin.png" loading="lazy" class="social-icon-img">
@@ -553,6 +578,9 @@
       </div> -->
 
     <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script> 
+
       <!-- JS section -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

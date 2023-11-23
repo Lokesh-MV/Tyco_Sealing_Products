@@ -1653,5 +1653,11 @@ div#footer-brutanix p a:hover {
     display: none;
   }
 }
-#semi-metallic-hero {
+.newsletter_head {
+  font-size: 24px;
+  color: #2a2a2a;
+  font-weight: 600;
+}
+.modal-body-text {
+  color: #2a2a2a;
 }
